@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: vehicle_trackers
+#
+#  id                   :bigint           not null, primary key
+#  vehicle_id           :bigint           not null
+#  latitude             :float
+#  longitude            :float
+#  speeding             :boolean          default(FALSE)
+#  maintenance_required :boolean          default(FALSE)
+#  recorded_on          :datetime
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: one
+  longitude: 1.5
+  latitude: 1.5
+  speeding: false
+  maintenance_required: false
+
+two:
+  vehicle: two
+  longitude: 1.5
+  latitude: 1.5
+  speeding: false
+  maintenance_required: false
